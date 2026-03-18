@@ -1,6 +1,5 @@
 """Performance metrics calculations."""
 
-from datetime import datetime
 from typing import Protocol
 
 import polars as pl

@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: quant-observability
+Version: 0.1.0
+Summary: Quantitative trading observability
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: polars>=1.0.0
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: dev
+Requires-Dist: ruff>=0.3.0; extra == "dev"
+Requires-Dist: mypy>=1.10.0; extra == "dev"
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+
+# quant-observability
+
+Performance tracking, metrics, and dashboards for trading strategies.
+
+## Features
+
+- Real-time P&L tracking
+- Strategy performance metrics (Sharpe, Sortino, max drawdown)
+- Equity curves
+- Signal quality metrics
+- Alert system
+
+## Architecture
+
+```
+observability/
+├── metrics/          # Strategy metrics calculations
+├── dashboards/       # Grafana/Prometheus configs
+├── alerts/           # Alert rules
+└── web/              # Web interface
+```
