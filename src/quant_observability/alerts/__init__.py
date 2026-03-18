@@ -1,1 +1,1 @@
-"""Alert configurations."""
+"""Alert system for trading strategies."""
